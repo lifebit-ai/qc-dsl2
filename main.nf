@@ -6,7 +6,7 @@ include fastqc from './modules/fastqc'
 include multiqc from './modules/multiqc'
 
 workflow {
-    main
+    main:
         reads = Channel.fromFilePairs( params.reads, size: params.singleEnd ? 1 : 2 )
         fastqc(reads)
         multiqc(fastqc.out)
