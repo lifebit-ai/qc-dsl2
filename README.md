@@ -8,5 +8,5 @@ Minimal template DSL2 Nextflow pipeline to run quality control (QC) on FastQ fil
 
 ### Usage:
 ```bash
-nextflow run main.nf --reads "testdata/test.20k_reads_{1,2}.fastq.gz"
+NXF_VER=19.08.1-edge nextflow run main.nf --reads "testdata/test.20k_reads_{1,2}.fastq.gz"
 ```
